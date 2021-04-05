@@ -16,7 +16,7 @@ app.use(helmet());
 app.options('*', cors());
 
 app.get('/', (request, response) => {
-  response.send({'salut': true});
+  response.send("<h1> hey !<h1>");
 });
 
 app.get('/products', async(request, response) => {
